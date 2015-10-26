@@ -1,0 +1,12 @@
+Lesson 3 HW - Build a blog
+
+- Front Page with entries (latest 10)
+*- /
+
+- Form to submit new entires 
+*- /newpage
+*- Text box for title
+*- Text area for entry
+
+- Permalink for entires
+*- /<page_id>

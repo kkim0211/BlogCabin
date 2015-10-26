@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}	
+	<a href="/blog/signup" class="main-title">
+		sign up
+	</a>
+	<form method="post">
+		<label>
+			<div>Username</div>
+			<input type="text" name="username" value="{{username}}"> 
+		</label>
+		<div class="error">{{user_error}}</div>
+		<label>
+			<div>Password</div>
+			<input type="password" name="password"> 
+		</label>
+		<label>
+			<div>Verify Password</div>
+			<input type="password" name="password_verify"> 
+		</label>
+		<div class="error">{{password_error}}</div>
+		<label>
+			<div>Email (optional)</div>
+			<input type="text" name="email" value="{{email}}"> 
+		</label>
+		<input type="submit">
+	</form>
+{% endblock %}
