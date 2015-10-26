@@ -4,6 +4,11 @@
 	<a href="/blog/newpost" class="main-title">
 		new post
 	</a>
+	<div class="login-area">
+		<a class="login-link" href="/blog">home</a>
+		|
+		<a class="login-link" href="/blog/logout">logout</a>
+	</div>
 	<form method="post">
 		<label>
 			<div>subject</div>
@@ -12,10 +17,8 @@
 		<label>
 			<div>blog</div>
 			<textarea name="content" style="height: 300px; width: 600px;">{{content}}</textarea>
+			<div class="error">{{error}}</div>
 		</label>
-
-		<div class="error">{{error}}</div>
-
 		<input type="submit">
 	</form>
 {% endblock %}

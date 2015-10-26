@@ -1,5 +1,13 @@
 #!/usr/bin/env python
 
+################################################################################
+# Written by Kevin Kim
+# 
+# BLOG PROJECT
+# 
+# References some code in Udactiy's Web Development course
+################################################################################
+
 import os
 import hmac
 import cgi
@@ -78,7 +86,7 @@ class Blog(db.Model):
 	title = db.StringProperty(required = True)
 	content = db.TextProperty(required = True)
 	post_time = db.DateTimeProperty(auto_now_add = True)
-	
+
 
 class User(db.Model):
 	username = db.StringProperty(required = True)

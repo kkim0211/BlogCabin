@@ -49,7 +49,7 @@ label + label {
     margin-top: 20px;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     width: 500px;
     font-size: 20px;
     padding: 2px;
@@ -64,6 +64,7 @@ textarea {
 }
 
 input[type=submit] {
+  margin-top: 10px;
   font-size: 24px;
 }
 

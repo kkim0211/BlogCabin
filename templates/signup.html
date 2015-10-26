@@ -4,12 +4,17 @@
 	<a href="/blog/signup" class="main-title">
 		sign up
 	</a>
+	<div class="login-area">
+		<a class="login-link" href="/blog">home</a>
+		|
+		<a class="login-link" href="/blog/login">login</a>
+	</div>
 	<form method="post">
 		<label>
 			<div>Username</div>
 			<input type="text" name="username" value="{{username}}"> 
+			<div class="error">{{user_error}}</div>
 		</label>
-		<div class="error">{{user_error}}</div>
 		<label>
 			<div>Password</div>
 			<input type="password" name="password"> 
@@ -17,8 +22,8 @@
 		<label>
 			<div>Verify Password</div>
 			<input type="password" name="password_verify"> 
+			<div class="error">{{password_error}}</div>
 		</label>
-		<div class="error">{{password_error}}</div>
 		<label>
 			<div>Email (optional)</div>
 			<input type="text" name="email" value="{{email}}"> 
